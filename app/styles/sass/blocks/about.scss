@@ -1,0 +1,47 @@
+.about {
+	margin-top: 179px;
+	&__top {
+		display: flex;
+	}
+	&__description {
+		width: 50%;
+		h2 {
+			font-size: 46px;
+			font-weight: 700;
+			line-height: 1.3;
+			font-family: Oswald, sans-serif;
+			color: #000;
+			margin-bottom: 32px;
+		}
+		&-text {
+			font-size: 16px;
+			line-height: 1.4;
+			margin-bottom: 24px;
+			color: #434242;
+		}
+		&-list-heading {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.3;
+			color: #000;
+			margin-bottom: 16px;
+		}
+		&-item {
+			font-size: 16px;
+			line-height: 22.4px;
+			color: #434242;
+			&::marker {
+				color: #961914;
+			}
+			&::before {
+				content: "";
+				color: #961914;
+			}
+		}
+	}
+	&__img-logo {
+		max-width: 588px;
+		width: 100%;
+		object-fit: cover;
+	}
+}

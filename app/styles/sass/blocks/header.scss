@@ -1,0 +1,357 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 16px;
+	background-image: url(../../../images/dist/background_header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		img {
+			max-width: 80px;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__nav {
+		ul {
+			display: flex;
+			li {
+				padding-right: 53px;
+				list-style: none;
+				font-weight: 500;
+				a {
+					font-size: 16px;
+					line-height: 1.4;
+					color: #fff;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.hero {
+	max-width: 491px;
+	margin-top: 130px;
+	padding-bottom: 225px;
+	color: #fff;
+	h1 {
+		position: relative;
+		margin-bottom: 10px;
+		font-size: 54px;
+		font-weight: bold;
+		line-height: 1.3;
+		font-family: Oswald, sans-serif;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 65px;
+			right: 56px;
+			width: 260.18px;
+			height: 92px;
+			transform: rotate(-0.5deg);
+			background-image: url(../../../images/dist/Ellipse_hero.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+
+	p {
+		margin-bottom: 25px;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	&__btn {
+		padding: 13px 42px;
+		background-color: #961914;
+		border-radius: 8px;
+		color: #fff;
+		font-weight: 600;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.about {
+	margin-top: 179px;
+	&__top {
+		display: flex;
+	}
+	&__description {
+		width: 50%;
+		h2 {
+			font-size: 46px;
+			font-weight: 700;
+			line-height: 1.3;
+			font-family: Oswald, sans-serif;
+			color: #000;
+			margin-bottom: 32px;
+		}
+		&-text {
+			font-size: 16px;
+			line-height: 1.4;
+			margin-bottom: 24px;
+			color: #434242;
+		}
+		&-list-heading {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.3;
+			color: #000;
+			margin-bottom: 16px;
+		}
+		&-item {
+			font-size: 16px;
+			line-height: 22.4px;
+			color: #434242;
+			&::marker {
+				color: #961914;
+			}
+			&::before {
+				content: "";
+				color: #961914;
+			}
+		}
+	}
+	&__img-logo {
+		max-width: 588px;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.consist {
+	margin-top: 80px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 32px 80px;
+		background-color: #ead1d0;
+	}
+	&__adult-heading,
+	&__puppy-heading {
+		font-size: 14px;
+		line-height: 28px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		max-height: 224px;
+		padding: 0;
+		margin: 0;
+		.consist__col {
+			display: block;
+		}
+		li {
+			position: relative;
+			margin-bottom: 23px;
+			list-style: none;
+			margin-right: 72px;
+			flex: 0 1 30%;
+			font-size: 18px;
+			&::before {
+				content: "";
+				width: 20px;
+				height: 14px;
+				position: absolute;
+				top: 8px;
+				left: -30px;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			&.meat {
+				&::before {
+					background-image: url(../../../images/dist/meat.svg);
+				}
+			}
+			&.bone {
+				&::before {
+					background-image: url(../../../images/dist/bone.svg);
+				}
+			}
+			&.veg {
+				&::before {
+					background-image: url(../../../images/dist/vegtbl.svg);
+				}
+			}
+			&.liver {
+				&::before {
+					background-image: url(../../../images/dist/liver.svg);
+				}
+			}
+			&.sub {
+				&::before {
+					background-image: url(../../../images/dist/subp.svg);
+				}
+			}
+			&.nuts {
+				&::before {
+					background-image: url(../../../images/dist/nuts.svg);
+				}
+			}
+			&.fruit {
+				&::before {
+					background-image: url(../../../images/dist/fruit.svg);
+				}
+			}
+		}
+	}
+}
+
+.diet {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 181px;
+		color: #000;
+
+		h2 {
+			position: relative;
+			font-family: oswald, sans-serif;
+			font-size: 46px;
+			line-height: 59.2px;
+			font-weight: 700;
+			margin-right: 97px;
+			min-width: 326px;
+			&::before {
+				content: " ";
+				position: absolute;
+				top: -5px;
+				left: 170px;
+				width: 181px;
+				height: 68px;
+				transform: rotate(-17deg);
+				background-image: url(../../../images/dist/Ellipse_hero.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	&__discription {
+		font-size: 16px;
+		line-height: 22.4px;
+	}
+	&__card {
+		display: flex;
+		align-items: center;
+		ul {
+			display: flex;
+			margin-top: 74px;
+			padding: 0;
+			li {
+				list-style: none;
+				&:not(:last-child) {
+					margin-right: 25px;
+				}
+				p {
+					font-size: 14px;
+					color: #434242;
+					margin-bottom: 11px;
+				}
+				img {
+					position: relative;
+					width: 279px;
+					height: 333px;
+					z-index: -1;
+					&::before {
+						content: " ";
+						position: absolute;
+						height: 60px;
+						width: 60px;
+						top: 0;
+						left: 0;
+						background-image: url("../../../images/dist/rabbit.png");
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+	&__title {
+		margin-top: 25px;
+		margin-bottom: 4px;
+		font-size: 16px;
+		line-height: 20.8px;
+		font-weight: 700;
+	}
+	&__subtitle {
+		margin-bottom: 16px;
+		font-size: 13px;
+		line-height: 16.9px;
+		color: #9f9e9d;
+	}
+	&__massa {
+		font-size: 13px;
+		color: #9f9e9d;
+		margin-bottom: 24px;
+	}
+	&__button {
+		padding: 13px 42px;
+		border: 1px solid #961914;
+		border-radius: 8px;
+		font-size: 16px;
+		font-weight: 600;
+		color: #961914;
+	}
+}
+
+// .calc {
+// 	margin-top: 80px;
+// 	margin-bottom: 180px;
+// 	&__main {
+// 		background-color: #ead1d0;
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 		// position: relative;
+// 		&::before {
+// 			content: "";
+// 			top: 0;
+// 			left: 0;
+// 			// position: absolute;
+// 			background-image: url(../../../images/dist/calc__line.svg);
+// 		}
+// 		&-header {
+// 			margin: 52px 151px 54px 50px;
+// 			font-size: 28px;
+// 			line-height: 39.2px;
+// 			font-weight: 500;
+// 		}
+// 		a {
+// 			padding: 13px 42px;
+// 			border-radius: 8px;
+// 			margin-right: 121px;
+// 			background-color: #961914;
+// 			color: #fff;
+// 			font-size: 16px;
+// 			font-weight: 600;
+// 		}
+// 	}
+// }

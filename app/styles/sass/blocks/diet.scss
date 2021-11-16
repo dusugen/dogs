@@ -1,0 +1,97 @@
+.diet {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 181px;
+		color: #000;
+
+		h2 {
+			position: relative;
+			font-family: oswald, sans-serif;
+			font-size: 46px;
+			line-height: 59.2px;
+			font-weight: 700;
+			margin-right: 97px;
+			min-width: 326px;
+			&::before {
+				content: " ";
+				position: absolute;
+				top: -5px;
+				left: 170px;
+				width: 181px;
+				height: 68px;
+				transform: rotate(-17deg);
+				background-image: url(../../../images/dist/Ellipse_hero.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	&__discription {
+		font-size: 16px;
+		line-height: 22.4px;
+	}
+	&__card {
+		display: flex;
+		align-items: center;
+		ul {
+			display: flex;
+			margin-top: 74px;
+			padding: 0;
+			li {
+				list-style: none;
+				&:not(:last-child) {
+					margin-right: 25px;
+				}
+				p {
+					font-size: 14px;
+					color: #434242;
+					margin-bottom: 11px;
+				}
+				img {
+					position: relative;
+					width: 279px;
+					height: 333px;
+					z-index: -1;
+					&::before {
+						content: " ";
+						position: absolute;
+						height: 60px;
+						width: 60px;
+						top: 0;
+						left: 0;
+						background-image: url("../../../images/dist/rabbit.png");
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+	&__title {
+		margin-top: 25px;
+		margin-bottom: 4px;
+		font-size: 16px;
+		line-height: 20.8px;
+		font-weight: 700;
+	}
+	&__subtitle {
+		margin-bottom: 16px;
+		font-size: 13px;
+		line-height: 16.9px;
+		color: #9f9e9d;
+	}
+	&__massa {
+		font-size: 13px;
+		color: #9f9e9d;
+		margin-bottom: 24px;
+	}
+	&__button {
+		padding: 13px 42px;
+		border: 1px solid #961914;
+		border-radius: 8px;
+		font-size: 16px;
+		font-weight: 600;
+		color: #961914;
+	}
+}
