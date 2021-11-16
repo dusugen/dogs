@@ -15,7 +15,7 @@ a {
 
 .header {
 	padding-top: 16px;
-	background-image: url(../../../images/dist/background_header.jpg);
+	background-image: url(../images/dist/background_header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	&__wrapper {
@@ -71,7 +71,7 @@ a {
 			width: 260.18px;
 			height: 92px;
 			transform: rotate(-0.5deg);
-			background-image: url(../../../images/dist/Ellipse_hero.svg);
+			background-image: url(../images/dist/Ellipse_hero.svg);
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
@@ -187,37 +187,37 @@ a {
 			}
 			&.meat {
 				&::before {
-					background-image: url(../../../images/dist/meat.svg);
+					background-image: url(../images/dist/meat.svg);
 				}
 			}
 			&.bone {
 				&::before {
-					background-image: url(../../../images/dist/bone.svg);
+					background-image: url(../images/dist/bone.svg);
 				}
 			}
 			&.veg {
 				&::before {
-					background-image: url(../../../images/dist/vegtbl.svg);
+					background-image: url(../images/dist/vegtbl.svg);
 				}
 			}
 			&.liver {
 				&::before {
-					background-image: url(../../../images/dist/liver.svg);
+					background-image: url(../images/dist/liver.svg);
 				}
 			}
 			&.sub {
 				&::before {
-					background-image: url(../../../images/dist/subp.svg);
+					background-image: url(../images/dist/subp.svg);
 				}
 			}
 			&.nuts {
 				&::before {
-					background-image: url(../../../images/dist/nuts.svg);
+					background-image: url(../images/dist/nuts.svg);
 				}
 			}
 			&.fruit {
 				&::before {
-					background-image: url(../../../images/dist/fruit.svg);
+					background-image: url(../images/dist/fruit.svg);
 				}
 			}
 		}
@@ -247,7 +247,7 @@ a {
 				width: 181px;
 				height: 68px;
 				transform: rotate(-17deg);
-				background-image: url(../../../images/dist/Ellipse_hero.svg);
+				background-image: url(../images/dist/Ellipse_hero.svg);
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
@@ -286,7 +286,7 @@ a {
 						width: 60px;
 						top: 0;
 						left: 0;
-						background-image: url("../../../images/dist/rabbit.png");
+						background-image: url("../images/dist/rabbit.png");
 						background-repeat: no-repeat;
 						background-size: contain;
 					}
@@ -336,7 +336,7 @@ a {
 // 			top: 0;
 // 			left: 0;
 // 			// position: absolute;
-// 			background-image: url(../../../images/dist/calc__line.svg);
+// 			background-image: url(../images/dist/calc__line.svg);
 // 		}
 // 		&-header {
 // 			margin: 52px 151px 54px 50px;
