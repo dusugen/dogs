@@ -1,0 +1,73 @@
+.get {
+	margin-top: 180px;
+	h2 {
+		margin-bottom: 81px;
+		font-family: oswald;
+		font-size: 46px;
+		line-height: 59.8px;
+		font-weight: 700;
+		color: #000;
+	}
+	img {
+		position: relative;
+		margin-bottom: 16px;
+	}
+	p {
+		font-size: 16px;
+	}
+	span {
+		color: #961914;
+		border-bottom: 1px solid #961914;
+	}
+	&__content {
+		&__items {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__item {
+			flex: 0 1 calc(24% - 25px);
+
+			$this: &;
+			&:last-child {
+				#{$this}__icon::after {
+					display: none;
+				}
+				//.Заменили длинную запись селектора на укороченную запись.//
+			}
+			&__title {
+				margin-bottom: 8px;
+				font-size: 18px;
+				line-height: 23.8px;
+				font-weight: 600;
+			}
+			&__icon {
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					width: 139px;
+					height: 100%;
+					top: 10px;
+					right: 65px;
+					background-image: url("../images/dist/get_arrow.svg");
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+				&__lines {
+					position: relative;
+					&::before {
+						position: absolute;
+						content: "";
+						width: 32px;
+						height: 28px;
+						top: -30px;
+						left: -25px;
+						background-image: url("../images/dist/3lines_smile.svg");
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+		}
+	}
+}

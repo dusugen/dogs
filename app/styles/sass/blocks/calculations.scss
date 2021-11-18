@@ -1,0 +1,39 @@
+.calculations {
+	margin-top: 80px;
+	&__content {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #ead1d0;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			max-width: 1198px;
+			max-height: 184px;
+			top: 0;
+			left: 0;
+			background-image: url("../images/dist/calculation_line.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&__text {
+			max-width: 705px;
+			padding: 52px 0 54px 50px;
+			margin-right: 151px;
+			font-size: 28px;
+			line-height: 39.2px;
+			font-weight: 500;
+		}
+		&__btn {
+			display: block;
+			padding: 13px 42px;
+			margin-right: 121px;
+			background-color: #961914;
+			border-radius: 8px;
+			color: #fff;
+		}
+	}
+}

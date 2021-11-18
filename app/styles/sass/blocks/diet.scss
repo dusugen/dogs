@@ -21,7 +21,7 @@
 				width: 181px;
 				height: 68px;
 				transform: rotate(-17deg);
-				background-image: url(../../../images/dist/Ellipse_hero.svg);
+				background-image: url(../images/dist/Ellipse_hero.svg);
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
@@ -52,15 +52,14 @@
 					position: relative;
 					width: 279px;
 					height: 333px;
-					z-index: -1;
 					&::before {
 						content: " ";
 						position: absolute;
-						height: 60px;
-						width: 60px;
 						top: 0;
 						left: 0;
-						background-image: url("../../../images/dist/rabbit.png");
+						height: 60px;
+						width: 60px;
+						background-image: url("../images/dist/rabbit.png");
 						background-repeat: no-repeat;
 						background-size: contain;
 					}

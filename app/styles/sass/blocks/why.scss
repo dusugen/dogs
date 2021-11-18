@@ -1,0 +1,67 @@
+.why {
+	margin-top: 180px;
+	background-image: url("../../../images/dist/why_line.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	&__header {
+		position: relative;
+		margin-bottom: 57px;
+		&::after {
+			position: absolute;
+			content: "";
+			top: 40px;
+			left: 274px;
+			width: 26px;
+			height: 32.5px;
+			background-image: url(../images/dist/3lines.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+	h2 {
+		font-family: oswald;
+		font-size: 46px;
+		line-height: 59.8px;
+		font-weight: 700;
+		color: #000;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		flex-basis: 25%;
+		&:not(:last-child) {
+			margin-right: 85px;
+		}
+		&__logo {
+			position: relative;
+			&::before {
+				position: absolute;
+				content: "";
+				width: 32px;
+				height: 28px;
+				top: -20px;
+				left: -20px;
+				background-image: url("../images/dist/3lines_smile.svg");
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+		&__title {
+			font-size: 18px;
+			line-height: 23.4px;
+			font-weight: 600;
+			margin-bottom: 8px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 22.4px;
+		}
+	}
+	img {
+		width: 40px;
+		height: 40px;
+		margin-bottom: 16px;
+	}
+}
