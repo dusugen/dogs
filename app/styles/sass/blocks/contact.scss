@@ -1,0 +1,281 @@
+.contact {
+	margin-top: 180px;
+	background-color: #961914;
+	color: #fff;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 100px;
+		left: 0;
+		width: 450px;
+		height: 450px;
+		height: 81%;
+		background-image: url("../images/dist/contact_line1.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		top: 0px;
+		right: -80px;
+		width: 290px;
+		height: 296px;
+		background-image: url("../../../images/dist/contact_line2.svg");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	&__question {
+		flex: 1 0 53%;
+	}
+	// CONTACT
+	&__contacts {
+		flex: 0 1 25%;
+		margin-right: 187px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	.contacts {
+		&__text {
+			margin-bottom: 24px;
+			font-size: 16px;
+			line-height: 22.4px;
+		}
+		&__tel {
+			margin-bottom: 24px;
+			font-size: 16px;
+			line-height: 22.4px;
+			font-weight: 700;
+		}
+		&__news {
+			font-size: 16px;
+			line-height: 22.4px;
+			margin-bottom: 80px;
+			a {
+				color: #fff;
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+	.btn {
+		position: relative;
+		display: inline-block;
+		padding: 10px 16px 10px 44px;
+		margin-bottom: 16px;
+		border-radius: 8px;
+		background-color: rgba(122, 26, 26, 0.678);
+		font-size: 14px;
+		line-height: 19.6px;
+		font-weight: 500;
+		color: #fff;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 24px;
+			height: 24px;
+			top: 8px;
+			left: 12px;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		&:last-child {
+			margin-bottom: 40px;
+		}
+		&_telegram {
+			padding-right: 25px;
+			margin-bottom: 40px;
+			&::before {
+				background-image: url("../images/dist/contact_telegram.svg");
+			}
+		}
+		&_whatsapp {
+			&::before {
+				background-image: url("../images/dist/contact_whatsapp.svg");
+			}
+		}
+	}
+	h2 {
+		margin-top: 80px;
+		margin-bottom: 8px;
+		font-family: oswald, sans-serif;
+		font-size: 60px;
+		line-height: 59.8px;
+		font-weight: 700;
+	}
+
+	// QUESTION
+	.question {
+		&__header {
+			position: relative;
+			margin-top: 110px;
+			font-size: 20px;
+			line-height: 28px;
+			font-weight: 600;
+			margin-bottom: 4px;
+			&::before {
+				position: absolute;
+				content: "";
+				width: 176px;
+				height: 334px;
+				top: -30px;
+				left: -200px;
+				background-image: url("../images/dist/contact_bglogo.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+		&__text {
+			margin-bottom: 34px;
+			font-size: 16px;
+			line-height: 22.4px;
+			font-weight: 400;
+		}
+	}
+	.form__row1 {
+		display: flex;
+		max-width: 636px;
+		justify-content: space-between;
+		margin-bottom: 16px;
+	}
+	.form__group {
+		display: flex;
+		position: relative;
+		flex: 0 1 50%;
+		&:not(:last-child) {
+			margin-right: 24px;
+		}
+	}
+	.form__input {
+		width: 100%;
+		padding-left: 15px;
+		padding-bottom: 10px;
+		border: 1px solid #e0e0e0;
+		border-radius: 8px;
+		background-color: transparent;
+		transition: 0.3s;
+		color: #fff;
+	}
+
+	.form__label {
+		padding-left: 15px;
+		position: absolute;
+		left: 0;
+		color: #9e9e9e;
+		transition: 0.3s;
+	}
+
+	.form__input:focus ~ .form__label,
+	.form__input:not(:placeholder-shown) ~ .form__label {
+		top: -18px;
+		font-size: 12px;
+		color: #e0e0e0;
+	}
+	// input[type="text"] {
+	// 	flex: 0 1 50%;
+	// 	margin-right: 24px;
+	// 	padding-top: 22px;
+	// 	padding-left: 15px;
+	// 	padding-bottom: 6px;
+	// 	border-radius: 8px;
+	// 	border: 1px solid rgba(255, 255, 255, 0.5);
+	// 	background-color: #961914;
+	// 	font-size: 14px;
+	// 	line-height: 19.6px;
+	// 	color: #fff;
+	// 	&::placeholder {
+	// 		font-size: 12px;
+	// 		color: #fff;
+	// 		transform: translateY(-20px);
+	// 		opacity: 60%;
+	// 	}
+	// }
+	// .form__group {
+	// 	position: relative;
+	// }
+	// .form__label {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	z-index: -1;
+	// 	color: #9e9e9e;
+	// 	transition: 0.3s;
+	// }
+	// input[type="email"] {
+	// 	flex: 0 1 50%;
+	// 	padding-left: 13px;
+	// 	border-radius: 8px;
+	// 	font-size: 14px;
+	// 	border: 1px solid rgba(255, 255, 255, 0.5);
+	// 	background-color: #961914;
+	// 	color: #fff;
+	// 	&::placeholder {
+	// 		color: #fff;
+	// 		opacity: 60%;
+	// 	}
+	// }
+	.form__row2 {
+		display: flex;
+	}
+	textarea {
+		max-width: 636px;
+		flex: 100%;
+		padding: 8px 0px 0px 15px;
+		margin-bottom: 22px;
+		border-radius: 8px;
+		resize: none;
+		background-color: #961914;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		color: #fff;
+		&::placeholder {
+			color: #fff;
+			opacity: 60%;
+		}
+	}
+	.contact__question {
+		margin-right: 75px;
+		max-width: 636px;
+	}
+	.question__agree {
+		display: flex;
+		justify-content: space-between;
+	}
+	.checkbox {
+		flex: 0 1 37%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.checkbox__confirm {
+		margin-right: 8px;
+		transform: translateY(-3px);
+	}
+	.checkbox__text {
+		font-size: 12px;
+		line-height: 16.8px;
+	}
+	input[type="button"] {
+		padding: 13px 54px;
+		font-size: 16px;
+		line-height: 22.4px;
+		font-weight: 700;
+		color: #ec7973;
+		border-radius: 8px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+	.form__btn {
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			top: 10px;
+			right: -152px;
+			width: 104px;
+			height: 104px;
+			background-image: url("../images/dist/contact_apple.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}

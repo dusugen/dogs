@@ -48,21 +48,30 @@
 					color: #434242;
 					margin-bottom: 11px;
 				}
-				img {
-					position: relative;
-					width: 279px;
-					height: 333px;
-					&::before {
-						content: " ";
-						position: absolute;
-						top: 0;
-						left: 0;
-						height: 60px;
-						width: 60px;
-						background-image: url("../images/dist/rabbit.png");
-						background-repeat: no-repeat;
-						background-size: contain;
-					}
+			}
+		}
+		&-img {
+			position: relative;
+			width: 279px;
+			height: 333px;
+			&::before {
+				content: " ";
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				height: 60px;
+				width: 60px;
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			&--cow {
+				&::before {
+					background-image: url(../images/dist/cow.png);
+				}
+			}
+			&--rabbit {
+				&::before {
+					background-image: url(../images/dist/rabbit.png);
 				}
 			}
 		}
@@ -92,5 +101,8 @@
 		font-size: 16px;
 		font-weight: 600;
 		color: #961914;
+		&:hover {
+			color: #961914;
+		}
 	}
 }

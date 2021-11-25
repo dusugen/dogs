@@ -1,0 +1,19 @@
+.footer {
+	background-color: #69120e;
+	&__content {
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		font-size: 12px;
+		line-height: 16.8px;
+		padding: 30px 0px;
+	}
+	&__item {
+		color: #fff;
+		opacity: 40%;
+	}
+	a {
+		color: #fff;
+	}
+}

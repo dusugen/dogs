@@ -1,7 +1,7 @@
 .get {
 	margin-top: 180px;
 	h2 {
-		margin-bottom: 81px;
+		margin-bottom: 77px;
 		font-family: oswald;
 		font-size: 46px;
 		line-height: 59.8px;
@@ -12,60 +12,65 @@
 		position: relative;
 		margin-bottom: 16px;
 	}
+	.get__item-icon--package {
+		margin-bottom: 21px;
+	}
 	p {
 		font-size: 16px;
+		line-height: 22.4px;
+		margin: 0;
 	}
 	span {
 		color: #961914;
 		border-bottom: 1px solid #961914;
 	}
-	&__content {
-		&__items {
-			display: flex;
-			justify-content: space-between;
-		}
-		&__item {
-			flex: 0 1 calc(24% - 25px);
 
-			$this: &;
-			&:last-child {
-				#{$this}__icon::after {
-					display: none;
-				}
-				//.Заменили длинную запись селектора на укороченную запись.//
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		flex: 0 1 calc(24% - 8px);
+
+		$this: &;
+		&:last-child {
+			#{$this}-icon::after {
+				display: none;
 			}
-			&__title {
-				margin-bottom: 8px;
-				font-size: 18px;
-				line-height: 23.8px;
-				font-weight: 600;
+			//.Заменили длинную запись селектора на укороченную запись.//
+		}
+		&-title {
+			margin-bottom: 8px;
+			font-size: 18px;
+			line-height: 23.8px;
+			font-weight: 600;
+		}
+		&-icon {
+			position: relative;
+			&::after {
+				position: absolute;
+				content: "";
+				width: 139px;
+				height: 100%;
+				top: 10px;
+				right: 65px;
+				background-image: url("../images/dist/get_arrow.svg");
+				background-size: contain;
+				background-repeat: no-repeat;
 			}
-			&__icon {
+
+			&--lines {
 				position: relative;
-				&::after {
+				&::before {
 					position: absolute;
 					content: "";
-					width: 139px;
-					height: 100%;
-					top: 10px;
-					right: 65px;
-					background-image: url("../images/dist/get_arrow.svg");
-					background-size: contain;
+					width: 32px;
+					height: 28px;
+					top: -30px;
+					left: -25px;
+					background-image: url("../images/dist/3lines_smile.svg");
 					background-repeat: no-repeat;
-				}
-				&__lines {
-					position: relative;
-					&::before {
-						position: absolute;
-						content: "";
-						width: 32px;
-						height: 28px;
-						top: -30px;
-						left: -25px;
-						background-image: url("../images/dist/3lines_smile.svg");
-						background-repeat: no-repeat;
-						background-size: contain;
-					}
+					background-size: contain;
 				}
 			}
 		}
