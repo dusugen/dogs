@@ -1,24 +1,13 @@
 .calculations {
 	margin-top: 80px;
-	.container {
-		position: relative;
-		&::before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			background-image: url("../images/dist/calculation_line.svg");
-			background-size: contain;
-			background-repeat: no-repeat;
-		}
+	.calculations-container {
+		background-color: #ead1d0;
 	}
 	&__content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background-color: #ead1d0;
+		background-image: url("../../../images/dist/calculations__line.svg");
 
 		&-text {
 			max-width: 705px;
@@ -36,6 +25,9 @@
 			border-radius: 8px;
 			color: #fff;
 			cursor: pointer;
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 }

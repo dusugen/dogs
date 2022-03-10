@@ -18,16 +18,20 @@ header {
 .container {
 	max-width: 1200px;
 	width: 100%;
+	margin: 0 20px;
 }
 .header {
 	padding-top: 16px;
 	background-image: url(../images/dist/background_header.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+
 	&__wrapper {
 		display: flex;
+		// position: fixed;
 		justify-content: space-between;
 		align-items: center;
+		z-index: 50;
 	}
 	&__logo {
 		img {
@@ -40,6 +44,7 @@ header {
 	&__nav {
 		ul {
 			display: flex;
+			align-items: center;
 			li {
 				padding-right: 53px;
 				list-style: none;
@@ -96,6 +101,29 @@ header {
 		font-weight: 600;
 		&:hover {
 			text-decoration: none;
+			background-color: #75110d;
 		}
+	}
+}
+.nav__burger {
+	display: none;
+}
+@media (max-width: 900px) {
+	.header__logo {
+		min-width: 60px;
+		width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.header__logo {
+		max-width: 60px;
+		width: 100%;
+	}
+	.nav__burger {
+		position: relative;
+		width: 27px;
+		height: 16px;
+		display: block;
+		margin-left: 20px;
 	}
 }
